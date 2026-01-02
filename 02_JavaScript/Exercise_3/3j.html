@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3j</title>
+</head>
+<body>
+    <script>
+        let footrest_count=2
+        let footrest_price=35
+        let drawer_count=1
+        let drawer_price=45
+        let total_items_price=(footrest_count*footrest_price)+(drawer_count*drawer_price)
+        console.log(`Total_items_price: ${total_items_price}`);
+        let del_fee=40
+        let total_order_value=total_items_price+del_fee
+        console.log(`Total_order_value:${total_order_value}`);
+        let discount=total_order_value/20
+        console.log(`Final_Price: ${total_order_value-discount}`);
+        
+    </script>
+</body>
+</html>

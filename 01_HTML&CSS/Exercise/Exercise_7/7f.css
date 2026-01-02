@@ -1,0 +1,19 @@
+input{
+    width: 400px;
+    border: 2px solid grey;
+    margin: 10px 0px;
+}
+label{
+    margin-bottom: 10px;
+}
+[type="submit"]{
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgb(10,102,194);
+    margin-top: 10px;
+    cursor: pointer;
+}
+[type="submit"]:active{
+    opacity: 0.5;
+}

@@ -1,0 +1,28 @@
+body{
+    text-align: center;
+}
+div{
+    vertical-align: middle;
+}
+div img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+input{
+    border: none;
+    vertical-align: middle;
+    padding: 0px 10px;
+}
+[placeholder="What's happeding?"]{
+    font-size: 18px;
+}
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    background-color: rgb(10,102,194);
+}

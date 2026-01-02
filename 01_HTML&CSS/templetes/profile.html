@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(375deg, #1cc7d0, #2ede98);
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;;
+            position: relative;
+        }
+        .profile-card{
+            padding: 40px;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile-image{
+            width: 150px;
+            height: 150px;
+            border: 5px solid #2ede98;
+            border-radius: 50%;
+        }
+        .profile-image img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .profile-name{
+            font-size: 22px;
+            font-weight: 700;
+        }
+        .profile-role{
+            font-size: 18px;
+            font-weight: 600;
+        }
+        a{
+            background: linear-gradient(375deg, #1cc7d0, #2ede98);
+            color: white;
+            border-radius: 50%;
+            padding: 8px 10px;
+        }
+        .profile-link{
+            margin-top: 20px;
+        }
+        .profile-link .list{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="profile-image">
+            <img src="/Projects/YouTube/assets/icon.jpg" alt="icon">
+        </div>
+        <div class="profile-name">Manikanta</div>
+        <div class="profile-role">Mern Stack Developer</div>
+        <div class="profile-link">
+            <ul class="list">
+                <li><a href="https://www.facebook.com/manikanta2412/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://x.com/Manikanta242503?t=WxN4GZJLdNc6iT2joEX0sA&s=08" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/mani.24_12?igsh=N2s2dnRsMmkxYnp3" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://youtube.com/@mani.24_12?si=h9ND70tvct-WbMFo" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

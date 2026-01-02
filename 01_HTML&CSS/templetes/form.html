@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Sans:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            background-color: lightblue;
+            font-family: "roboto",sans-serif;
+        }
+        .form{
+            background-color: white;
+            border-radius: 20px;
+            padding: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            box-shadow: 3px 5px 20px rgba(0,0,0,0.4);
+            max-width: 500px;
+            width: 90%;
+            }
+        .form h1{
+            font-size: 25px;
+            text-align: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 20px;
+        }
+        .form .inputs{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+        }
+        label{
+            width: 180px;
+            font-size: 14px;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+        label sup{
+            color: red;
+        }
+        input,select{
+            flex: 1;
+            padding: 5px 10px;
+            border: 1px solid #ababab;
+            border-radius: 4px;
+            min-width: 100px;
+        }
+        .inputs:last-child{
+            justify-content: center;
+            margin-top: 10px;
+        }
+        [type="file"]{
+            border: 0;
+            padding: 0;
+        }
+        button{
+            width: 100%;
+            background-color: rgb(62, 184, 184);
+            border: 1px solid rgb(225, 225, 225);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: inset 3px 5px 20px rgba(0,0,0,0.2);
+        }
+        @media screen and (max-width:600px){
+            .form{
+                padding: 20px;
+            }
+            .form .inputs{
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+            label{
+                width: 100%;
+                margin-bottom: 2px;
+            }
+            input, select{
+                width: 100%; 
+                box-sizing: border-box;
+            }
+            .inputs:last-child{
+                justify-content: center;
+                margin-top: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h1>Registration Form</h1>
+        <form>
+            <div class="inputs">
+                <label for="fname">First Name<sup>*</sup> :</label>
+                <input type="text" name="First Name" id="fname" required autofocus>
+            </div>
+            <div class="inputs">
+                <label for="lname">Last Name<sup>*</sup> :</label>
+                <input type="text" name="Last Name" id="lname" required>
+            </div>
+            <div class="inputs">
+                <label for="num">Mobile Number<sup>*</sup> :</label>
+                <input type="tel" name="First Name" id="num" required>
+            </div>
+            <div class="inputs">
+                <label for="mail">Email ID<sup>*</sup> :</label>
+                <input type="email" name="Email ID" id="mail" required>
+            </div>
+            <div class="inputs">
+                <label for="cname">College Name<sup>*</sup> :</label>
+                <select id="cname" name="College Name" required>
+                    <option>--Select Your College Name--</option>
+                    <option value="KIET">KIET, Coringa, Kakinada</option>
+                    <option value="KIET II">KIET II, Coringa, Kakinada</option>
+                    <option value="KIEW">KIEW, Coringa, Kakinada</option>
+                </select>
+            </div>
+            <div class="inputs">
+                <label for="bname">Branch Name<sup>*</sup> :</label>
+                <input type="text" name="Branch Name" id="cname" required>
+            </div>
+            <div class="inputs">
+                <label for="id">ID Card<sup>*</sup> :</label>
+                <input type="file" name="ID Card" id="id" accept=".jpg,.png" required>
+            </div>
+            <div class="inputs">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

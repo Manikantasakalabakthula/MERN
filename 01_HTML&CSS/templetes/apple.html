@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple-Card</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Raleway, sans-serif;
+            background-color: rgb(142, 224, 20);
+        }
+        .root{
+            width: 600px;
+            height: 600px;
+            background-color: white;
+            box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        .image-box{
+            width: 45%;
+            height: 400px;
+            background-color: greenyellow;
+            border-radius: 10px;
+            box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.3);
+            position: absolute;
+            left: -30px;
+            display: flex;
+            align-items: center;
+        }
+        .image{
+            width: 350px;
+            height: 350px;
+            background-image: url(/HTML&CSS/templetes/assets/green-apple-with-slice.png);
+            background-size: cover;
+            border-radius: 50%;
+            position: absolute;
+            left: -100px;
+        }
+        .content-box{
+            width: 55%;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .product-name, .price, .types, .benifits, .add{
+            width: 80%;
+            height: 60px;
+        }
+        .product-name{
+            font-size: 22px;
+            font-weight: 900;
+        }
+        .product-name div{
+            font-size: 10px;
+            font-weight: 600;
+            color: gray;
+        }
+        .price{
+            color: red;
+            font-size: 25px;
+        }
+        .price span{
+            font-size: 55px;
+        }
+        .color{
+            font-size: 12px;
+            font-weight: 800;
+            color: gray;
+        }
+        .types img{
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+        }
+        .types img:hover{
+            border: 2px solid gray;
+        }
+        .benifits-name{
+            font-size: 12px;
+            font-weight: 800;
+            color: gray;
+        }
+        .benifits ul{
+            font-size: 12px;
+        }
+        .add button{
+            width: 100%;
+            height: 40px;
+            border: 0;
+            color: white;
+            background-color: red;
+            font-weight: 800;
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="root">
+        <div class="image-box">
+            <div class="image"></div>
+        </div>
+        <div class="content-box">
+            <div class="product-name">Delicious Apples<div>COD: 45999</div></div>
+            <div class="price">R$ <span>7.93</span></div>
+            <div class="types">
+                <div class="color">SELECT COLOR</div>
+                <img src="/HTML&CSS/templetes/assets/green-apple.png" alt="green-apple">
+                <img src="/HTML&CSS/templetes/assets/orange-apple.png" alt="orange-apple">
+                <img src="/HTML&CSS/templetes/assets/red-apple.png" alt="red-apple">
+                <img src="/HTML&CSS/templetes/assets/yellow-apple.png" alt="yellow-apple">
+            </div>
+            <div class="benifits">
+                <div class="benifits-name">BENIFITS</div>
+                <ul>
+                    <li>Apples are nutricious</li>
+                    <li>Apples may be good for weight loss</li>
+                    <li>Apples may be good for bone health</li>
+                    <li>They're linked to a lowest risk of diabetes</li>
+                </ul>
+            </div>
+            <div class="add">
+                <button type="submit">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

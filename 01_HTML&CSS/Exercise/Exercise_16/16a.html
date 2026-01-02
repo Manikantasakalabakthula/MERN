@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16a</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            margin: 10px 20px;
+            font-family: "Roboto", sans-serif;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 30px;
+        }
+        .left{
+            display: flex;
+            align-items: center;
+        }
+        .menu{
+            height: 24px;
+            color: black;
+            margin-right: 20px;
+        }
+        .logo{
+            height: 24px;
+        }
+        .middle{
+            margin-left: 30px;
+            width: 0;
+            flex: 1;
+            max-width: 500px;
+            display: flex;
+            align-items: center;
+        }
+        .search-bar{
+            width: 0;
+            font-size: 16px;
+            flex: 1;
+            padding-left: 10px;
+            height: 34px;
+            border: 1px solid rgb(211, 210, 210);
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            box-shadow: inset 3px 5px 20px rgba(0,0,0,0.15);
+        }
+        .search-btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 34px;
+            border: 1px solid rgb(211, 210, 210);
+            border-right: 0;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+        .search-img, .voice-img{
+            height: 24px;
+        }
+        .voice-btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            padding: 6px 10px;
+            border: 1px solid rgb(211, 210, 210);
+            margin-left: 15px;
+        }
+        .right{
+            width: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-shrink: 0;
+        }
+        .icon{
+            height: 24px;
+        }
+        .profile{
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .menu-container,
+        .youtube-container,
+        .search-container,
+        .voice-container,
+        .upload-container,
+        .app-container,
+        .notification-container,
+        .profile-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+        }
+        .tool-tip{
+            font-size: 10px;
+            padding: 3px 6px;
+            background-color: rgb(210, 210, 210);
+            position: absolute;
+            bottom: -30px;
+            opacity: 0;
+            transition: opacity 0.15s;
+            pointer-events: none;
+            white-space: nowrap;
+        }
+        .menu-container:hover .tool-tip,
+        .youtube-container:hover .tool-tip,
+        .search-container:hover .tool-tip,
+        .voice-container:hover .tool-tip,
+        .upload-container:hover .tool-tip,
+        .app-container:hover .tool-tip,
+        .notification-container:hover .tool-tip,
+        .profile-container:hover .tool-tip{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <div class="menu-container">
+                <img class="menu" src="/youtube/assets/menu.svg" alt="menu">
+                <div class="tool-tip">Menu</div>
+            </div><div class="youtube-container">
+                <img class="logo" src="/youtube/assets/youtube.svg" alt="menu">
+                <div class="tool-tip">Youtube</div>
+            </div>
+        </div>
+        <div class="middle">
+            <input type="search" class="search-bar" placeholder="Search">
+            <div class="search-container">
+                <button class="search-btn"><img class="search-img" src="/youtube/assets/search.svg" alt="search"></button>
+                <div class="tool-tip">Search</div>
+            </div>
+            <div class="voice-container">
+                <button class="voice-btn"><img class="voice-img" src="/youtube/assets/mic.svg" alt="mic"></button>
+                <div class="tool-tip">Search width your voice</div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="upload-container">
+                <img class="icon" src="/youtube/assets/video.svg" alt="video">
+                <div class="tool-tip">Create</div>
+            </div>
+            <div class="app-container">
+                <img class="icon" src="/youtube/assets/apps.svg" alt="apps">
+                <div class="tool-tip">Apps</div>
+            </div>
+            <div class="notification-container">
+                <img class="icon" src="/youtube/assets/notification.svg" alt="notification">
+                <div class="tool-tip">Notification</div>
+            </div>
+            <div class="profile-container">
+                <img class="profile" src="/youtube/assets/icon.jpg" alt="icon">
+                <div class="tool-tip">Manikanta</div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

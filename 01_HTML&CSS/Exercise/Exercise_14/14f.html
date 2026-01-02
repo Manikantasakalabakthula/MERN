@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14f</title>
+    <style>
+        body{
+            color: white;
+            font-family: Arial;
+            margin: 0;
+            height: 1000px;
+            background-color: black;
+        }
+        .header{
+            background-color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+        }
+        .profile{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .profile .profile-image{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .porfile-name{
+            font-weight: 600;
+        }
+        .buttons{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        button{
+            border: 0;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        [type="submit"]{
+            background-color: rgb(10,102,194);
+            color: white;
+            font-weight: 600;
+        }
+        .sidebar1{
+            width: 100px;
+            background-color: rgb(25, 25, 25);
+            position: fixed;
+            top: 70px;
+            left: 0px;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px 10px;
+        }
+        img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        .sidebar2{
+            width: 150px;
+            padding: 20px 30px;
+            background-color: rgb(67, 67, 67);
+            position: fixed;
+            left: 120px;
+            bottom: 0;
+            top: 70px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 30px;
+        }
+        .top{
+            width: 150px;
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="profile">
+            <img class="profile-image" src="/HTML&CSS/assets/cat.jpg" alt="cat">
+            <div class="profile name">Oliver</div>
+        </div>
+        <div class="buttons">
+            <button type="submit">Add Friend</button>
+            <button type="button">Messsage</button>
+        </div>
+    </div>
+    <div class="sidebar1">
+        <img src="/HTML&CSS/assets/cat.jpg" alt="cat">
+        <img src="/HTML&CSS/assets/cat2.jpg" alt="cat2">
+        <img src="/HTML&CSS/assets/dog.jpg" alt="dog">
+    </div>
+    <div class="sidebar2">
+        <div class="top">
+            <div>INFO</div>
+            <div>+</div>
+        </div>
+        <div># new videos</div>
+        <div># updates</div>
+        <div># faq</div>
+    </div>
+</body>
+</html>

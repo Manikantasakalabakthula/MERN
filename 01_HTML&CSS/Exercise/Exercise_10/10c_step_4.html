@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10c</title>
+    <style>
+        .video-card{
+            width: 485px;
+            height: 135px;
+            border: 5px solid blue;
+            margin: 0;
+            padding: 0;
+        }
+        .image{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        img{
+            width: 200px;
+            height: 135px;
+            object-fit: cover;
+        }
+        .text-card{
+            height: 140px;
+            display: inline-block;
+            vertical-align: middle;
+            font-family: Arial;
+            border-left: 5px solid blue;
+        }
+        p{
+            border: 5px solid red;
+            margin: 0;
+            padding: 6px;
+        }
+        .p1{
+            font-weight: 700;
+            font-size: 18px;
+        }
+        .p2{
+            border-bottom: 0;
+            border-top: 0;
+        }
+        .p2,.p3{
+            color: grey;
+        }
+        .cards{
+            width: 495px;
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <div class="video-card">
+            <div class="image">
+                <img src="/HTML&CSS/assets/cat2.jpg" alt="image1">
+            </div>
+            <div class="text-card">
+                <p class="p1">How to complete against CS <br>degrees (as a self-taught dev)</p>
+                <p class="p2">SuperSimpleDev</p>
+                <p class="p3">1.5k views - 4 months ago</p>
+            </div>
+        </div>
+        <div class="line" style="border-top: 5px solid red;"></div>
+        <div class="video-card">
+            <div class="image">
+                <img src="/HTML&CSS/assets/cat.jpg" alt="image1">
+            </div>
+            <div class="text-card">
+                <p class="p1">How to complete against CS <br>degrees (as a self-taught dev)</p>
+                <p class="p2">SuperSimpleDev</p>
+                <p class="p3">1.5k views - 4 months ago</p>
+            </div>
+        </div>
+        <div class="line" style="border-top: 5px solid red;"></div>
+        <div class="video-card">
+            <div class="image">
+                <img src="/HTML&CSS/assets/dog.jpg" alt="image1">
+            </div>
+            <div class="text-card">
+                <p class="p1">How to complete against CS <br>degrees (as a self-taught dev)</p>
+                <p class="p2">SuperSimpleDev</p>
+                <p class="p3">1.5k views - 4 months ago</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

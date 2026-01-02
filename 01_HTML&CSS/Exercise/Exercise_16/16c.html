@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16c</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            font-family: "Roboto", sans-serif;
+            padding: 10px;
+            display: grid;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        .youtube{
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 15px;
+        }
+        .thumbnail-image{
+            width: 350px;
+            margin-bottom: 15px;
+        }
+        .youtube-card .thumbnail-image img{
+            width: 100%;
+            object-fit: cover;
+        }
+        .card-des{
+            display: flex;
+            align-items: start;
+            gap: 10px;
+        }
+
+        .card-des img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        p{
+            margin: 0;
+            font-size: 12px;
+        }
+        .p1{
+            margin-bottom: 5px;
+        }
+        .card-name{
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <a class="youtube-card" href="https://youtu.be/TIRRNHfcjl8?si=LrT3BRGPF7l2FJiQ">
+        <div class="thumbnail-image">
+            <img src="/HTML&CSS/assets/thumbnail2.jpg" alt="1">
+        </div>
+        <div class="pro-text">
+            <div class="card-des">
+                <img src="/youtube/assets/cc.jpg" alt="cc">
+                <div class="channel-des">
+                    <div class="card-name">HTML & CSS Full Course in 6 Hours</div>
+                    <p class="p1">College Coders</p>
+                    <p class="p2">997 views - 9 days ago</p>
+                </div>
+            </div>
+        </div>
+    </a>
+</body>
+</html>

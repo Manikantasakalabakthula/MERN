@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        body{
+            height: 1000px;
+            padding-top: 80px;
+            padding-left: 210px;
+        }
+        .header{
+            background-color: lightcoral;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 55px;
+        }
+        .item1,.item2{
+            width: 100px;
+            height: 100px;
+        }
+        .item1{
+            background-color: lightblue;
+            cursor: pointer;
+            position: relative;
+        }
+        .item2{
+            background-color: lightpink;
+            cursor: pointer;
+            position: relative;
+        }
+        .sidebar{
+            background-color: lightsalmon;
+            position: fixed;
+            top: 55px;
+            left: 0;
+            bottom: 0;
+            width: 200px;
+        }
+        .item{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        .box{
+            background-color: black;
+            color: white;
+            font-size: 12px;
+            padding: 2px 4px;
+            position: absolute;
+            top: 40px;
+            right: -40px;
+            opacity: 0;
+        }
+        .item1:hover .box,.item2:hover .box{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">HEADER</div>
+    <div class="sidebar">SIDDEBAR</div>
+    <div class="item1">
+        <div class="item">item1</div>
+        <div class="box">box</div>
+    </div>
+    <div class="item2">
+        <div class="item">item2</div>
+        <div class="box">box</div>
+    </div>
+</body>
+</html>

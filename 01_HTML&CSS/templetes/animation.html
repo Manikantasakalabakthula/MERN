@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Sans:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            font-family: "Poppins",sans-serif;
+            overflow-x: hidden;
+        }
+        .name span{
+            font-size: 50px;
+            color: red;
+        }
+        .name{
+            font-size: 100px;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 200px;
+            margin-bottom: 400px;
+            line-height: 80px;
+        }
+        .main{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 50px;
+            padding: 50px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        @keyframes appear {
+            from{
+                opacity: 0;
+                scale: 0;
+            }
+            to{
+                opacity: 1;
+                scale: 1;
+            }
+        }
+        img{
+            animation: appear 0.5s linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        }
+    </style>
+</head>
+<body>
+    <div class="name"><span>MANIKANTA</span><br>SCROLL ANIMATION</div>
+    <div class="main">
+        <img src="/01_HTML&CSS/templetes/assets/image 1.jpeg" alt="image">
+        <img src="/01_HTML&CSS/templetes/assets/image 9.jpeg" alt="image">
+        <img src="/01_HTML&CSS/templetes/assets/image 11.jpeg" alt="image">
+        <img src="/01_HTML&CSS/templetes/assets/image 1.jpeg" alt="image">
+        <img src="/01_HTML&CSS/templetes/assets/image 9.jpeg" alt="image">
+        <img src="/01_HTML&CSS/templetes/assets/image 11.jpeg" alt="image">
+        <img src="/01_HTML&CSS/templetes/assets/image 1.jpeg" alt="image">
+        <img src="/01_HTML&CSS/templetes/assets/image 9.jpeg" alt="image">
+        <img src="/01_HTML&CSS/templetes/assets/image 11.jpeg" alt="image">
+        <img src="/01_HTML&CSS/templetes/assets/image 1.jpeg" alt="image">
+        <img src="/01_HTML&CSS/templetes/assets/image 9.jpeg" alt="image">
+        <img src="/01_HTML&CSS/templetes/assets/image 11.jpeg" alt="image">
+    </div>
+</body>
+</html>

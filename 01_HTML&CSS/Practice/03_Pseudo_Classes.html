@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        button{
+            border: 0;
+            font-weight: 600;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            box-shadow: 3px 5px 20px rgba(0,0,0,0.3);
+            transition: padding 1s, font-size 1s;
+        }
+        button:hover{
+            font-size: 32px;
+            background-color: blue;
+            padding: 20px 40px;
+        }
+        button:active{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <!-- Lesson-3 Transations,shawdows:-
+	1):hover=>hover is used for giving effect over the button.
+	2):active=>active is used for giving effect when we clink on it.
+	3)transition:it is used for giving transition.
+	4)box-shadow:10px 10px 10px rgba(0,0,0,0,15);
+		1-10px:-horigental position.
+		2-10px:-vertical positon.
+		3-10px:-blur -->
+    <button type="submit">Join</button>
+
+    <!-- DEV TOOLS:-
+	if we want to inspect a website to know the font,size,background etc of css or html.
+	we use technique that,at white space right click and inspect to know the details of any button and code 	also. -->
+</body>
+</html>

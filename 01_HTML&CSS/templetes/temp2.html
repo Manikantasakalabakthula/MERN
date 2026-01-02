@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>temp2</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        header{
+            height: 70px;
+            background-color: rgb(190, 189, 189);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 50px;
+        }
+        .left{
+            width: 50px;
+            height: 50px;
+        }
+        .left img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .right ul{
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+        .intro{
+            height: 250px;
+            background-color: rgb(190, 189, 189);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 50px;
+        }
+        .intro-left{
+            height: 200px;
+            width: 150px;
+            background-color: rgb(190, 189, 189);
+        }
+        .intro-name{
+            font-size: 22px;
+            font-weight: 600;
+        }
+        .intro-des{
+            margin-top: 15px;
+        }
+        .intro-right{
+            height: 200px;
+            width: 65%;
+            background-color: rgb(144, 144, 144);
+            display: flex;
+            align-items: center;
+            padding-left: 30px;
+        }
+        .intro-right span{
+            width: 120px;
+        }
+        .circles{
+            display: flex;
+            gap: 3px;
+            align-items: center;
+            position: absolute;
+            right: 520px;
+            margin-top: 10px;
+        }
+        .circle{
+            width: 10px;
+            height: 10px;
+            background-color: rgb(190, 189, 189);
+            border-radius: 50%;
+        }
+        .rectangles{
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 50px;
+            padding: 0px 50px;
+        }
+        .rectangle{
+            height: 200px;
+            background-color: rgb(190, 189, 189);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .bar{
+            height: 80px;
+            margin: 30px 50px;
+            background-color: rgb(190, 189, 189);
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding-left: 20px;
+        }
+        footer{
+            height: 50px;
+            background-color: rgb(190, 189, 189);
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 50px;
+        }
+        .nav{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        .copyright{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img src="/Projects/YouTube/assets/icon.jpg" alt="icon">
+        </div>
+        <div class="right">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Info</li>
+                <li>Products</li>
+            </ul>
+        </div>
+    </header>
+    <section class="intro">
+        <div class="intro-left">
+            <div class="intro-name">Intro</div>
+            <div class="intro-des">Some Introduction lines about the website or company</div>
+        </div>
+        <div class="intro-right">
+            <span>Featured project slider</span>
+        </div>
+    </section>
+
+    <section class="circles">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </section>
+
+    <section class="rectangles">
+        <div class="rectangle">Services</div>
+        <div class="rectangle">Services</div>
+        <div class="rectangle">Services</div>
+        <div class="rectangle">Recent work</div>
+        <div class="rectangle">Recent work</div>
+        <div class="rectangle">Recent work</div>
+    </section>
+    
+    <section class="bar">Twitter Feed</section>
+
+    <footer>
+        <ul class="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Info</li>
+            <li>Products</li>
+        </ul>
+        <div class="copyright">&copy;Copyright Info</div>
+    </footer>
+</body>
+</html>
